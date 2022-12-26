@@ -48,6 +48,6 @@ app.post("/", (req, res)=>{
 });
 const PORT = process.env.PORT || 5000;
 
-app.listen(port, ()=>{
+app.listen(PORT, ()=>{
     console.log(`The application started successfully on port ${PORT}`);
 });
