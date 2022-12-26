@@ -24,7 +24,7 @@ const UserSchema = new mongoose.Schema({
   });
   const User = mongoose.model('User', UserSchema);
 
-const port = 80;
+
  app.use('/static',express.static('static'))
  app.set('view engine','hbs')
  app.use(express.urlencoded({ extended:false}))
@@ -46,8 +46,8 @@ app.post("/", (req, res)=>{
     us.save()
     res.render("index")
 });
-
+const PORT = process.env.PORT || 5000;
 
 app.listen(port, ()=>{
-    console.log(`The application started successfully on port ${port}`);
+    console.log(`The application started successfully on port ${PORT}`);
 });
