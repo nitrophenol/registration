@@ -166,26 +166,17 @@
 
 <body>
   <div class="main-block">
-    <h1>Registration</h1>
-    <form action="/" method="post">
-      <hr>
-      <div class="account-type">
-        <input type="radio" value="none" id="radioOne" name="account" checked />
-        <label for="radioOne" class="radio">Personal</label>
-        <input type="radio" value="none" id="radioTwo" name="account" />
-        <label for="radioTwo" class="radio">Company</label>
-      </div>
-      <hr>
+    <h1>Login</h1>
+    <form action="/login" method="post">
+ 
+      
       <label id="icon" for="name"><i class="fas fa-envelope"></i></label>
       <input type="text" name="email" id="name" placeholder="Email" required />
-      <label id="icon" for="name"><i class="fas fa-user"></i></label>
-      <input type="text" name="name" id="name" placeholder="Name" required />
       <label id="icon" for="name"><i class="fas fa-unlock-alt"></i></label>
       <input type="password" name="password" id="name" placeholder="Password" required />
       <div class="btn-block">
-        <button type="submit" href="/">Submit</button>
-        <p id="log">Have a account? <a href="/login">Login</a></p>
-        
+        <button type="submit" href="/login">Submit</button>
+    
       </div>
     </form>
   </div>
